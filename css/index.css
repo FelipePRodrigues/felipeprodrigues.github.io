@@ -22,11 +22,11 @@ body{
 }
 
 #brazil-icon.active{    
-    background: url('../img/flags.webp') 0 0;
+    background: url('../img/flags.png') 0 0;
 }
 
 #brazil-icon.inactive{
-    background: url('../img/flags.webp') 0 -35px;
+    background: url('../img/flags.png') 0 -35px;
 }
 
 #brazil-icon.inactive:hover{
@@ -34,11 +34,11 @@ body{
 }
 
 #us-icon.active{    
-    background: url('../img/flags.webp') -35px 0;
+    background: url('../img/flags.png') -35px 0;
 }
 
 #us-icon.inactive{
-    background: url('../img/flags.webp') -35px -35px;
+    background: url('../img/flags.png') -35px -35px;
 }
 
 #us-icon.inactive:hover{
