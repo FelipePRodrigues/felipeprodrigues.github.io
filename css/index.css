@@ -21,26 +21,26 @@ body{
     margin-right: 10px;
 }
 
-#brazil-icon{    
-    background-image: url("../img/sm-brazil.png") ;
+#brazil-icon.active{    
+    background: url('../img/flags.png') 0 0;
 }
 
 #brazil-icon.inactive{
-    background-image: url("../img/sm-brazil-grayscale.png");
+    background: url('../img/flags.png') 0 -35px;
 }
 
 #brazil-icon.inactive:hover{
-    background-image: url("../img/sm-brazil.png");
+    background-position: 0 0;
 }
 
-#us-icon{    
-    background-image: url("../img/sm-us.png") ;
+#us-icon.active{    
+    background: url('../img/flags.png') -35px 0;
 }
 
 #us-icon.inactive{
-    background-image: url("../img/sm-us-grayscale.png");
+    background: url('../img/flags.png') -35px -35px;
 }
 
 #us-icon.inactive:hover{
-    background-image: url("../img/sm-us.png");
+    background-position: -35px 0;
 }
