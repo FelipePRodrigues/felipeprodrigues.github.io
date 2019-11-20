@@ -3,3 +3,44 @@ body{
     background-color: #2b3137;
     font-family: sans-serif;
 }
+
+#language{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon{
+    height: 35px;
+    width: 35px;
+    background-size: cover;                    
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 10px;
+}
+
+#brazil-icon{    
+    background-image: url("../img/sm-brazil.png") ;
+}
+
+#brazil-icon.inactive{
+    background-image: url("../img/sm-brazil-grayscale.png");
+}
+
+#brazil-icon.inactive:hover{
+    background-image: url("../img/sm-brazil.png");
+}
+
+#us-icon{    
+    background-image: url("../img/sm-us.png") ;
+}
+
+#us-icon.inactive{
+    background-image: url("../img/sm-us-grayscale.png");
+}
+
+#us-icon.inactive:hover{
+    background-image: url("../img/sm-us.png");
+}
