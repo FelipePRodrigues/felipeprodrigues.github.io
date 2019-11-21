@@ -1,9 +1,18 @@
+html{
+    height: 100%;
+}
+
 body{
     margin: 0;
     background-color: #2b3137;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
+
+/*LANGUAGE*/
 #language{
     width: 100%;
     height: 50px;
@@ -21,26 +30,56 @@ body{
     margin-right: 10px;
 }
 
-#brazil-icon.active{    
-    background: url('../img/flags.png') 0 0;
+#brazil-icon.active{background: url('../img/flags.png') 0 0;}
+#us-icon.active{background: url('../img/flags.png') -35px 0;}
+
+#brazil-icon.inactive{background: url('../img/flags.png') 0 -35px;}
+#us-icon.inactive{background: url('../img/flags.png') -35px -35px;}
+
+#brazil-icon.inactive:hover{background-position: 0 0;}
+#us-icon.inactive:hover{background-position: -35px 0;}
+
+
+/*CONTENT*/
+#content {
+    flex: 1 0 auto;
 }
 
-#brazil-icon.inactive{
-    background: url('../img/flags.png') 0 -35px;
+
+/*SOCIAL*/
+#social{
+    height: 25px;
+    background-color: lightcoral;
+    flex-shrink: 0;
+    display: flex;
 }
 
-#brazil-icon.inactive:hover{
-    background-position: 0 0;
+.social-item{
+    width: 25%;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-#us-icon.active{    
-    background: url('../img/flags.png') -35px 0;
+.social-item p{
+    margin-left: 10px;
 }
 
-#us-icon.inactive{
-    background: url('../img/flags.png') -35px -35px;
-}
+#linkedin{background-color:  #005380;}
+#github{background-color:  #24292E;}
+#twitter{background-color:  #2880B7;}
+#instagram{background-color:  #C61E76;}
 
-#us-icon.inactive:hover{
-    background-position: -35px 0;
+#linkedin:hover{background-color:  #0e354a;}
+#github:hover{background-color:  #1D2022;}
+#twitter:hover{background-color:  #06456C;}
+#instagram:hover{background-color:  #971057;}
+
+
+/*MEDIAQUERY*/
+@media (max-width: 900px){ 
+    .social-item p{display: none;}
 }
