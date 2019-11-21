@@ -4,21 +4,25 @@ html{
 
 body{
     margin: 0;
-    background-color: #2b3137;
     font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
     height: 100vh;
+}
+
+header{
+    background-color: #24292E;
+    position: fixed;
+    height: 50px;
+    width: 100%;
 }
 
 
 /*LANGUAGE*/
 #language{
-    width: 100%;
     height: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1;
 }
 
 .icon{
@@ -43,15 +47,31 @@ body{
 /*CONTENT*/
 #content {
     flex: 1 0 auto;
+    z-index: 0;
+    height: 100vh;
 }
 
+.fullscreen{
+    height: 100vh;    
+}
+
+#resumo{background-color: #2b3137; display: flex; justify-content: center; align-items: center; flex-direction: column; color: white;}
+#resumo h1{font-size: 70px;}
+#buttons{display: flex;}
+.button{font-size: 30px;margin: 15px;border: solid 4px white; width: 20vw;}
+
+
+#projetos{background-color: yellow;}
+#curriculo{background-color: green;}
 
 /*SOCIAL*/
 #social{
     height: 25px;
-    background-color: lightcoral;
-    flex-shrink: 0;
     display: flex;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .social-item{
