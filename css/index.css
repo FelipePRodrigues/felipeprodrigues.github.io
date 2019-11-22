@@ -57,8 +57,11 @@ header{
 
 #resumo{background-color: #2b3137; display: flex; justify-content: center; align-items: center; flex-direction: column; color: white;}
 #resumo h1{font-size: 70px;}
-#buttons{display: flex;}
-.button{font-size: 30px;margin: 15px;border: solid 4px white; width: 20vw;}
+#buttons{display: flex;justify-content: center;}
+#buttons a{font-size: 30px;margin: 15px;border: solid 4px white; width: 20vw;box-shadow: 10px 10px #24292E;}
+#buttons a{margin: 20px 0px 20px 0px;display: block;text-decoration: none;color: white;}
+#buttons a:hover{font-size: 30px;margin: 15px;border: solid 4px grey; width: 20vw;box-shadow: 10px 10px #24292E;}
+#buttons a:hover{color: grey;}
 
 
 #projetos{background-color: yellow;}
