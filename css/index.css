@@ -99,6 +99,11 @@ header{
 #twitter:hover{background-color:  #06456C;}
 #instagram:hover{background-color:  #971057;}
 
+#linkedin-icon{height: 20px; width: 20px; background: url('../img/social.png') 0 -20px;}
+#github-icon{height: 20px; width: 20px; background: url('../img/social.png') 0 0;}
+#twitter-icon{height: 20px; width: 20px; background: url('../img/social.png') -20px -20px;}
+#instagram-icon{height: 20px; width: 20px; background: url('../img/social.png') -20px 0;}
+
 
 /*MEDIAQUERY*/
 @media (max-width: 900px){ 
