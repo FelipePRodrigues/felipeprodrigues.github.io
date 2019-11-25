@@ -15,6 +15,20 @@ header{
     width: 100%;
 }
 
+#backtotop{
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+#backtotop img{
+    height: 10px;
+    margin-right: 5px;
+}
+
 
 /*LANGUAGE*/
 #language{
@@ -62,8 +76,8 @@ header{
 #buttons a:hover{color: grey;border-color: grey;}
 
 
-#projetos{background-color: yellow;}
-#curriculo{background-color: green;}
+#projetos{background-color: brown;}
+#curriculo{background-color: navy;}
 
 /*SOCIAL*/
 #social{
