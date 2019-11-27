@@ -4,24 +4,20 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Felipe Rodrigues</title>
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../favicon.png"/>
     <meta name='viewport' content='width=device-width, initial-scale=1'>  
     <link rel="stylesheet" type="text/css" href="../css/index.css">  
     <link>
 </head>
 <body>    
-    <a id="top"></a>
-    <a href="#top" id="backtotop"><img src="../img/arrow-top-sm.png" alt="Arrow Top">Voltar ao topo</a>
-    <a href="#top"></a>
+    <a href="#content" id="backtotop"><img src="../img/arrow-top-sm.png" alt="Arrow Top">Voltar ao topo</a>
     <header>
-        <div id="language">
-            <div id="brazil-icon" class="icon active"></div>
-            <div id="us-icon" class="icon inactive" onclick="window.location = '../en-us/index.html'"></div>
-        </div>
+        <div id="brazil-icon" class="active"></div>
+        <div id="us-icon" class="inactive" onclick="window.location = '../en-us/index.html'"></div>
     </header>
     <section id="content">        
         <div class="fullscreen" id="resumo">
-            <div style="margin-bottom: 25px; text-align: center;">
+            <div style="margin-bottom: 25px; text-align: center;" id="resumo-conteudo">
                 <h1>Felipe Rodrigues</h1>
                 <h2>Backend Developer</h2>
                 <section id="buttons">
@@ -38,20 +34,20 @@
         </div>
     </section>
     <footer id="social">
-        <div id="linkedin" class="social-item" onclick="window.open('https://www.linkedin.com/in/felipeprodrigues')">
-            <div id="linkedin-icon"></div> 
+        <div id="linkedin" onclick="window.open('https://www.linkedin.com/in/felipeprodrigues')">
+            <div></div> 
             <p>Linkedin</p>
         </div>
-        <div id="github" class="social-item" onclick="window.open('https://github.com/felipeprodrigues')">
-            <div id="github-icon"></div> 
+        <div id="github" onclick="window.open('https://github.com/felipeprodrigues')">
+            <div></div> 
             <p>Github</p> 
         </div>
-        <div id="twitter" class="social-item" onclick="window.open('https://twitter.com/FelipePRodr')">
-            <div id="twitter-icon"></div> 
+        <div id="twitter" onclick="window.open('https://twitter.com/FelipePRodr')">
+            <div></div> 
             <p>Twitter</p>
         </div>
-        <div id="instagram" class="social-item" onclick="window.open('https://www.instagram.com/felipeprodr/')">
-            <div id="instagram-icon"></div> 
+        <div id="instagram" onclick="window.open('https://www.instagram.com/felipeprodr/')">
+            <div></div> 
             <p>Instagram</p>
         </div>
     </footer>

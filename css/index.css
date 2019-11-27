@@ -1,3 +1,7 @@
+@import 'header.css';
+@import 'header-language.css';
+@import 'footer.css';
+
 html{
     height: 100%;
 }
@@ -6,13 +10,6 @@ body{
     margin: 0;
     font-family: sans-serif;
     height: 100vh;
-}
-
-header{
-    background-color: #24292E;
-    position: fixed;
-    height: 50px;
-    width: 100%;
 }
 
 #backtotop{
@@ -29,35 +26,6 @@ header{
     margin-right: 5px;
 }
 
-
-/*LANGUAGE*/
-#language{
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 1;
-}
-
-.icon{
-    height: 35px;
-    width: 35px;
-    background-size: cover;                    
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-right: 10px;
-}
-
-#brazil-icon.active{background: url('../img/flags.png') 0 0;}
-#us-icon.active{background: url('../img/flags.png') -35px 0;}
-
-#brazil-icon.inactive{background: url('../img/flags.png') 0 -35px;}
-#us-icon.inactive{background: url('../img/flags.png') -35px -35px;}
-
-#brazil-icon.inactive:hover{background-position: 0 0;}
-#us-icon.inactive:hover{background-position: -35px 0;}
-
-
 /*CONTENT*/
 #content {
     flex: 1 0 auto;
@@ -69,57 +37,13 @@ header{
     height: 100vh;    
 }
 
-#resumo{background-color: #2b3137; display: flex; justify-content: center; align-items: center; flex-direction: column; color: white;}
-#resumo h1{font-size: 70px;}
+#resumo{background-color: rgb(43,49,55); display: flex; justify-content: center; align-items: center; flex-direction: column; color: white;}
+#resumo-conteudo h1{font-size: 70px; margin-bottom: 0;}
+#resumo-conteudo h2{margin-bottom: 50px;}
 #buttons{display: flex;justify-content: center;}
 #buttons a{font-size: 30px;margin: 15px;border: solid 4px white; width: 20vw;box-shadow: 10px 10px #24292E;margin: 20px 10px 20px 10px;display: block;text-decoration: none;color: white;padding: 20px}
 #buttons a:hover{color: grey;border-color: grey;}
 
 
-#projetos{background-color: brown;}
-#curriculo{background-color: navy;}
-
-/*SOCIAL*/
-#social{
-    height: 25px;
-    display: flex;
-    z-index: 1;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.social-item{
-    width: 25%;
-    height: 100%;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.social-item p{
-    margin-left: 10px;
-}
-
-#linkedin{background-color:  #005380;}
-#github{background-color:  #24292E;}
-#twitter{background-color:  #2880B7;}
-#instagram{background-color:  #C61E76;}
-
-#linkedin:hover{background-color:  #0e354a;}
-#github:hover{background-color:  #1D2022;}
-#twitter:hover{background-color:  #06456C;}
-#instagram:hover{background-color:  #971057;}
-
-#linkedin-icon{height: 20px; width: 20px; background: url('../img/social.png') 0 -20px;}
-#github-icon{height: 20px; width: 20px; background: url('../img/social.png') 0 0;}
-#twitter-icon{height: 20px; width: 20px; background: url('../img/social.png') -20px -20px;}
-#instagram-icon{height: 20px; width: 20px; background: url('../img/social.png') -20px 0;}
-
-
-/*MEDIAQUERY*/
-@media (max-width: 900px){ 
-    .social-item p{display: none;}
-}
+#projetos{background-color: #243647;}
+#curriculo{background-color: white;}

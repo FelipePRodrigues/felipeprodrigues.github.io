@@ -1,0 +1,72 @@
+footer{
+    height: 25px;
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div{
+    width: 25%;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer div p{
+    margin-left: 10px;
+}
+
+footer div div{
+    height: 20px;
+    width: 20px;
+}
+
+#linkedin{
+    background-color:  #005380;
+}
+#github{
+    background-color:  #24292E;
+}
+#twitter{
+    background-color:  #2880B7;
+}
+#instagram{
+    background-color:  #C61E76;
+}
+
+#linkedin:hover{
+    background-color:  #0e354a;
+}
+#github:hover{
+    background-color:  #1D2022;
+}
+#twitter:hover{
+    background-color:  #06456C;
+}
+#instagram:hover{
+    background-color:  #971057;
+}
+
+#linkedin div{
+    background: url('../img/social.png') 0 -20px;
+}
+#github div{
+    background: url('../img/social.png') 0 0;
+}
+#twitter div{
+    background: url('../img/social.png') -20px -20px;
+}
+#instagram div{
+    background: url('../img/social.png') -20px 0;
+}
+
+@media (max-width: 900px){ 
+    footer div p{
+        display: none;
+    }
+}
