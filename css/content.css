@@ -8,7 +8,7 @@
     min-height: 100vh;    
 }
 
-#resumo{
+#overview{
     background-color: rgb(36,36,36); 
     display: flex; 
     justify-content: center; 
@@ -17,12 +17,12 @@
     color: white;
 }
 
-#resumo h1{
+#overview h1{
     font-size: 70px; 
     margin-bottom: 0;    
 }
 
-#resumo h2{
+#overview h2{
     margin-bottom: 50px;
 }
 
@@ -50,9 +50,9 @@
     border-color: grey;
 }
 
-#projetos{
+#projects{
     background-color: rgb(48,48,48);
 }
 
-#curriculo{
+#resume{
     background-color: rgb(190,190,190);}
