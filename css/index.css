@@ -2,6 +2,9 @@
 @import 'header-language.css';
 @import 'footer.css';
 @import 'content.css';
+@import 'overview.css';
+@import 'projects.css';
+@import 'resume.css';
 
 html{
     height: 100%;
