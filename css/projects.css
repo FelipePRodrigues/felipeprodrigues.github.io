@@ -1,3 +1,58 @@
 #projects{
-    background-color: rgb(48,48,48);
+    background-color: rgb(48,48,48);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project{
+    min-height: 150px;
+    min-width: 200px;    
+}
+
+.project div{
+    margin: 10px;    
+    padding-top: 56.25%;
+    border: solid 4px white;
+}
+
+#ferreirapet{
+    background: url('../img/projects/ferreirapet-gray.png') no-repeat;    
+    background-position: center;
+}
+
+#ferreirapet:hover{
+    border-color: grey;
+}
+
+#planbelle{
+    background: url('../img/projects/ferreirapet-gray.png') no-repeat;    
+    background-position: center;
+}
+
+#ctgis{
+    background: url('../img/projects/ferreirapet-gray.png') no-repeat;  
+    background-position: center;  
+}
+
+@media (min-width: 900px) 
+{
+    .project{
+        flex: 0 0 33%;
+    }
+}
+
+@media (max-width: 899px) 
+{
+    .project{
+        flex: 0 0 49%;
+    }
+}
+
+@media (max-width: 450px) 
+{
+    .project{
+        flex: 0 0 99%;
+    }
 }
