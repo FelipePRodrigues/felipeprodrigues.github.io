@@ -1,9 +1,17 @@
 #projects{
-    background-color: rgb(48,48,48);   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    background-color: rgb(48,48,48);      
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+#projects h1{
+    flex: 0 0 99%;
+    font-size: 70px; 
+    margin: 60px 0 40px 0;
+    color: white;
+    text-align: center;
 }
 
 .project{
@@ -12,7 +20,7 @@
 }
 
 .project div{
-    margin: 10px;    
+    margin: 10px 10px 30px 10px;    
     padding-top: 56.25%;
     border: solid 4px white;
 }
