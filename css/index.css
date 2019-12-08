@@ -16,6 +16,11 @@ body{
     height: 100vh;
 }
 
+body:after{
+    display:none;
+    content: url('../img/projects/vermais.jpg');
+}
+
 #backtotop{
     position: fixed;
     bottom: 35px;
