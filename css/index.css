@@ -5,6 +5,7 @@
 @import 'overview.css';
 @import 'projects.css';
 @import 'resume.css';
+@import 'modal.css';
 
 html{
     height: 100%;
