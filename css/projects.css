@@ -31,50 +31,50 @@
     transition: 0.3s  
 }
 
-#ctgis{
+#ctgis div{
     background: url('../img/projects/ctgis.png') no-repeat;    
     background-position: center;   
     border-color: #e8b33c;
 }
 
-#ctgis:hover{
+#ctgis div:hover{
     background: url('../img/projects/vermais.png') no-repeat; 
     background-position: center;   
     background-color: #e8b33c;
 }
 
-#planbelle{
+#planbelle div{
     background: url('../img/projects/planbelle.png') no-repeat;    
     background-position: center;   
     border-color: #cc3399;
 }
 
-#planbelle:hover{
+#planbelle div:hover{
     background: url('../img/projects/vermais.png') no-repeat;    
     background-position: center;   
     background-color: #cc3399;
 }
 
-#felipeprodrigues{
+#felipeprodrigues div{
     background: url('../img/projects/felipeprodrigues.png') no-repeat;    
     background-position: center;
     border-color: #FFFFFF;      
 }
 
-#felipeprodrigues:hover{
+#felipeprodrigues div:hover{
     background: url('../img/projects/vermais.png') no-repeat;    
     background-position: center;
     background-color: #242424;   
     border-color: #242424;      
 }
 
-#ferreirapet{
+#ferreirapet div{
     background: url('../img/projects/ferreirapet.png') no-repeat;    
     background-position: center;   
     border-color: #d3d2ca;
 }
 
-#ferreirapet:hover{
+#ferreirapet div:hover{
     background: url('../img/projects/vermais.png') no-repeat;    
     background-position: center;   
     background-color: #242424;
@@ -107,5 +107,10 @@
 {
     .project{
         flex: 0 0 99%;
+    }
+
+    #portfolio h1{
+        font-size: 40px;
+        margin-bottom: 20px;
     }
 }

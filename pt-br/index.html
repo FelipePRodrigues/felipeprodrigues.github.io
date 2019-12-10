@@ -35,18 +35,10 @@
         <div class="" id="portfolio">
             <h1>Meus Projetos</h1>
             <div id="projects">
-                <div class="project" onclick="openCTGIS();">
-                    <div id="ctgis"></div>
-                </div>    
-                <div class="project">
-                    <div id="planbelle"></div>
-                </div>
-                <div class="project">
-                    <div id="felipeprodrigues"></div>
-                </div>                           
-                <div class="project">
-                    <div id="ferreirapet"></div>                
-                </div>
+                <div id="ctgis" class="project" onclick="openModal(this);"><div></div></div>    
+                <div id="planbelle" class="project" onclick="openModal(this);"><div></div></div>
+                <div id="felipeprodrigues" class="project" onclick="openModal(this);"><div></div></div>                      
+                <div id="ferreirapet" class="project" onclick="openModal(this);"><div></div></div>
             </div>            
         </div>
         <div class="fullscreen" id="resume">
@@ -75,8 +67,20 @@
     
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text..</p>
+            <span class="close">&times;</span>                        
+            <section id="ctgis-content" class="project-content">
+                <h1>CTGIS</h1>
+                <p>Sistema web de geoprocessamento focado no setor público. Utiliza</p>
+            </section>
+            <section id="planbelle-content" class="project-content">
+                <h1>Planbelle Convênio</h1>
+            </section>
+            <section id="felipeprodrigues-content" class="project-content">
+                <h1>FelipePRodrigues</h1>
+            </section>
+            <section id="ferreirapet-content" class="project-content">
+                <h1>Ferreira Pet</h1>
+            </section>
         </div>        
     </div>
     
