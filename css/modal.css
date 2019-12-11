@@ -49,9 +49,25 @@
   font-size: 18px;
 }
 
+.screenshots{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.screenshots img{
+  margin: 5px;
+  flex: 0 0 48%;
+}
+
 @media (max-width: 600px) 
 {
   .project-content h1{
     font-size: 30px;    
+  }
+  
+  .screenshots img{
+    flex: 0 0 99%;
+    margin:2px;
   }
 }
