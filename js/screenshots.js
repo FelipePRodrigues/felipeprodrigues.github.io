@@ -1,3 +1,5 @@
 function openScreenshot(img){
-    console.log(img);
+    if(img){
+        window.open(img.currentSrc);
+    }
 }
