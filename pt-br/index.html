@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Felipe Rodrigues</title>
-    <link rel="shortcut icon" type="image/png" href="../favicon.png"/>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>  
-    <link rel="stylesheet" type="text/css" href="../css/index.css">          
+    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">        
+    <meta name="theme-color" content="#ffffff">
 </head>
-<body>    
+
+<body>
     <a href="#content" id="backtotop"><img src="../img/arrow-top-sm.png" alt="Arrow Top">Voltar ao topo</a>
-    
+
     <header>
         <div id="brazil-icon" class="active"></div>
         <div id="us-icon" class="inactive" onclick="window.location = '../en-us/index.html'"></div>
     </header>
-    
+
     <section id="content">
         <div class="fullscreen" id="overview">
             <h1>&#60&#47&#62 Felipe Rodrigues</h1>
@@ -35,43 +37,55 @@
         <div class="" id="portfolio">
             <h1>Meus Projetos</h1>
             <div id="projects">
-                <div id="ctgis" class="project" onclick="openModal(this);"><div></div></div>    
-                <div id="planbelle" class="project" onclick="openModal(this);"><div></div></div>
-                <div id="felipeprodrigues" class="project" onclick="openModal(this);"><div></div></div>                      
-                <div id="ferreirapet" class="project" onclick="openModal(this);"><div></div></div>
-            </div>            
+                <div id="ctgis" class="project" onclick="openModal(this);">
+                    <div></div>
+                </div>
+                <div id="planbelle" class="project" onclick="openModal(this);">
+                    <div></div>
+                </div>
+                <div id="felipeprodrigues" class="project" onclick="openModal(this);">
+                    <div></div>
+                </div>
+                <div id="ferreirapet" class="project" onclick="openModal(this);">
+                    <div></div>
+                </div>
+            </div>
         </div>
         <div class="fullscreen" id="resume">
-            
+
         </div>
     </section>
-    
+
     <footer id="social">
         <div id="linkedin" onclick="window.open('https://www.linkedin.com/in/felipeprodrigues')">
-            <div></div> 
+            <div></div>
             <p>Linkedin</p>
         </div>
         <div id="github" onclick="window.open('https://github.com/felipeprodrigues')">
-            <div></div> 
-            <p>Github</p> 
+            <div></div>
+            <p>Github</p>
         </div>
         <div id="twitter" onclick="window.open('https://twitter.com/FelipePRodr')">
-            <div></div> 
+            <div></div>
             <p>Twitter</p>
         </div>
         <div id="instagram" onclick="window.open('https://www.instagram.com/felipeprodr/')">
-            <div></div> 
+            <div></div>
             <p>Instagram</p>
         </div>
     </footer>
-    
+
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>                        
+            <span class="close">&times;</span>
             <section id="ctgis-content" class="project-content">
                 <h1>CTGIS</h1>
-                <p>Sistema web de geoprocessamento focado no setor público. Utiliza ferramentas como o PostgreSQL, o GeoServer e o OpenLayers para entregar uma solução que facilita o controle dos imóveis de um município.</p>
-                <p>Trabalhei no sistema desde o estágio inicial e pude colaborar tanto no desempenho quanto na escalabilidade da solução, e também pude desenvolver funcionalidades que facilitaram bastante o reuso e a manutenção do código.</p>
+                <p>Sistema web de geoprocessamento focado no setor público. Utiliza ferramentas como o PostgreSQL, o
+                    GeoServer e o OpenLayers para entregar uma solução que facilita o controle dos imóveis de um
+                    município.</p>
+                <p>Trabalhei no sistema desde o estágio inicial e pude colaborar tanto no desempenho quanto na
+                    escalabilidade da solução, e também pude desenvolver funcionalidades que facilitaram bastante o
+                    reuso e a manutenção do código.</p>
                 <div class="tools">
                     <p>Tecnologias Utilizadas:</p>
                     <p>C#, Javascript, JQuery, Shell Script, PostgreSQL, Firebird, HTML, CSS, Bootstrap</p>
@@ -83,6 +97,19 @@
             </section>
             <section id="planbelle-content" class="project-content">
                 <h1>Planbelle Convênio</h1>
+                <p>Sistema para gestão de um convênio de salões de beleza e outros serviços. Além de controlar os
+                    cadastros e emitir relatórios, o sistema realiza uma integração com uma API de pagamentos
+                    (PagSeguro) para que os clientes possam pagar suas mensalidades.</p>
+                <p>Trabalhei na modelagem e na implementação das telas do sistema, nas rotinas do banco de dados e na
+                    integração com a API de pagamentos.</p>
+                <div class="tools">
+                    <p>Tecnologias Utilizadas:</p>
+                    <p>C#, Javascript, JQuery, MySQL, HTML, CSS, Bootstrap</p>
+                </div>
+                <div class="screenshots">
+                    <img src="../img/projects/screenshots/planbelle-1.webp" onclick="openScreenshot(this);"/>
+                    <img src="../img/projects/screenshots/planbelle-2.webp" />
+                </div>
             </section>
             <section id="felipeprodrigues-content" class="project-content">
                 <h1>FelipePRodrigues</h1>
@@ -90,9 +117,11 @@
             <section id="ferreirapet-content" class="project-content">
                 <h1>Ferreira Pet</h1>
             </section>
-        </div>        
+        </div>
     </div>
-    
-    <script type="text/javascript" src="../js/modal.js"></script>        
+
+    <script type="text/javascript" src="../js/modal.js"></script>
+    <script type="text/javascript" src="../js/screenshots.js"></script>
 </body>
+
 </html>
