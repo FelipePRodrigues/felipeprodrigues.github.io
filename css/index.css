@@ -19,7 +19,7 @@ body{
 
 body:after{
     display:none;
-    content: url('../img/projects/vermais.jpg');
+    content: url('../img/projects/vermais.png');
 }
 
 #backtotop{
