@@ -1,9 +1,9 @@
 var modal = document.getElementById("myModal");
 var closeSpan = document.getElementsByClassName("close")[0];
 
-function openModal(project){    
-    if(project.id){        
-        fillModal(project.id + "-content");        
+function openModal(project) {
+    if (project.id) {
+        fillModal(project.id + "-content");
     }
 }
 
@@ -17,21 +17,23 @@ window.onclick = function(event) {
     }
 }
 
-function fillModal(projectId){
-    if(projectId && document.getElementById(projectId)){
+function fillModal(projectId) {
+    if (projectId && document.getElementById(projectId)) {
+        document.body.style.overflowY = "hidden";
         document.getElementById(projectId).style.display = "block";
         modal.style.display = "block";
     }
 }
 
-function hideModal(){
-    if(modal){
-        modal.style.display = "none";        
+function hideModal() {
+    if (modal) {
+        modal.style.display = "none";
+        document.body.style.overflowY = "auto";
     }
-    
+
     var projectContents = document.getElementsByClassName("project-content");
-    
-    for(i = 0; i < projectContents.length; i++){
+
+    for (i = 0; i < projectContents.length; i++) {
         projectContents[i].style.display = "none";
     }
 }
