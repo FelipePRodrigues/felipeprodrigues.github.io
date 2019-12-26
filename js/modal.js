@@ -3,7 +3,7 @@ var closeSpan = document.getElementsByClassName("close")[0];
 
 function openModal(project) {
     if (project.id) {
-        fillModal(project.id + "-content");
+        fillModal(project.id);
     }
 }
 
@@ -18,9 +18,12 @@ window.onclick = function(event) {
 }
 
 function fillModal(projectId) {
-    if (projectId && document.getElementById(projectId)) {
+    if (projectId && document.getElementById(projectId + "-content")) {
         document.body.style.overflowY = "hidden";
-        document.getElementById(projectId).style.display = "block";
+        document.getElementById(projectId + "-content").style.display = "block";
+
+        fillScreenshots(projectId);
+
         modal.style.display = "block";
     }
 }
@@ -35,5 +38,21 @@ function hideModal() {
 
     for (i = 0; i < projectContents.length; i++) {
         projectContents[i].style.display = "none";
+    }
+}
+
+function fillScreenshots(projectId) {
+    if (document.getElementById("screenshots-" + projectId)) {
+        let language = window.navigator.userLanguage || window.navigator.language;
+        let screenshotTitle = language == "pt-BR" ? "Clique para abrir em uma nova guia" : "Click to open in a new tab";
+
+        let screenshotsParent = document.getElementById("screenshots-" + projectId)
+        let screenshots = "";
+
+        for (i = 1; i < 3; i++) {
+            screenshots += "<img src=\"../img/projects/screenshots/" + projectId + "-" + i + ".webp\" onclick=\"openScreenshot(this);\" title=\"" + screenshotTitle + "\"/>";
+        }
+
+        screenshotsParent.innerHTML = screenshots;
     }
 }
