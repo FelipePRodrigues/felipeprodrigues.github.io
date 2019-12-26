@@ -58,6 +58,12 @@
     border-radius: 10px;
 }
 
+.project-content a.enabled:hover {
+    user-select: none;
+    color: #444;
+    border-color: #444;
+}
+
 .project-content a.disabled {
     user-select: none;
     color: #444;
