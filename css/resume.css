@@ -1,3 +1,70 @@
-#resume{
-    background-color: rgb(200,200,200);
+#resume {
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    color: rgb(36, 36, 36);
+}
+
+#resume h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#resume div {
+    padding-right: 20vw;
+    padding-left: 20vw;
+    text-align: justify;
+}
+
+#resume div p {
+    font-size: 20px;
+}
+
+#downloadResume {
+    font-size: 30px;
+    margin: 15px;
+    border: solid 4px rgb(36, 36, 36);
+    width: 30vw;
+    /*box-shadow: 10px 10px rgb(28, 28, 28);*/
+    margin: 20px 10px 50px 10px;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+#downloadResume:hover {
+    color: grey;
+    border-color: grey;
+}
+
+@media (max-width: 1000px) {
+    #downloadResume {
+        width: 50vw;
+        font-size: 25px;
+    }
+
+    #resume div {
+        padding-right: 20vw;
+        padding-left: 20vw;
+    }
+}
+
+@media (max-width: 600px) {
+    #resume h1 {
+        font-size: 40px;
+    }
+
+    #downloadResume {
+        width: 75vw;
+        font-size: 20px;
+    }
+
+    #resume div {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
