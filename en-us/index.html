@@ -4,10 +4,16 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Felipe Rodrigues</title>
-    <link rel="shortcut icon" type="image/png" href="../favicon.png"/>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>  
-    <link rel="stylesheet" type="text/css" href="../css/index.css">  
-    <link>
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>    
     <a href="#content" id="backtotop"><img src="../img/arrow-top-sm.png" alt="Arrow Top">Back to top</a>
@@ -19,7 +25,7 @@
     
     <section id="content">
         <div class="fullscreen" id="overview">
-            <h1>Felipe Rodrigues</h1>
+            <h1>&#60&#47&#62 Felipe Rodrigues</h1>
             <h2>Full Stack Developer | Backend Enthusiast</h2>
             <section id="buttons">
                 <a href="#projects">Projects</a>
@@ -29,51 +35,98 @@
         <div class="" id="portfolio">
             <h1>Meus Projetos</h1>
             <div id="projects">
-                <div class="project" onclick="openCTGIS();">
-                    <div id="ctgis"></div>
-                </div>    
-                <div class="project">
-                    <div id="planbelle"></div>
+                <div id="ctgis" class="project" onclick="openModal(this);">
+                    <div></div>
                 </div>
-                <div class="project">
-                    <div id="felipeprodrigues"></div>
-                </div>                           
-                <div class="project">
-                    <div id="ferreirapet"></div>                
+                <div id="planbelle" class="project" onclick="openModal(this);">
+                    <div></div>
                 </div>
-            </div>            
+                <div id="felipeprodrigues" class="project" onclick="openModal(this);">
+                    <div></div>
+                </div>
+                <div id="ferreirapet" class="project" onclick="openModal(this);">
+                    <div></div>
+                </div>
+            </div>          
         </div>
-        <div class="fullscreen" id="resume">
-            
+        <div class="" id="resume">
+            <h1>My Resume</h1>
+            <div>
+                <p>Computer Engineer with over three years of professional experience in systems development, maintenance and deployment. Interested in developing solutions, always concerned with usability, maintainability and security.</p>
+                <p>I've been working in web development for over 3 years now, and am familiar with several technologies, especially ASP.NET, Javascript, and relational databases such as SQL Server and PostgreSQL.</p>
+            </div>
+            <a id="downloadResume" onclick="window.open('../pdf/resume/Resume - Felipe Rodrigues.pdf')">Download Resume</a>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <section id="ctgis-content" class="project-content">
+                    <h1>CTGIS</h1>
+                    <p>Geographic information web system focused on the public sector. It uses tools such as PostgreSQL, GeoServer and OpenLayers to deliver a solution that makes it easy to control a municipality's real estate.</p>
+                    <p>I've worked on the system from an early stage and was able to collaborate on both the performance and scalability of the solution, and I was also able to develop features that greatly facilitated code reuse and maintenance.</p>
+                    <div class="tools">
+                        <p>Technologies Used:</p>
+                        <p>C#, Javascript, JQuery, Shell Script, PostgreSQL, Firebird, HTML, CSS and Bootstrap</p>
+                    </div>
+                    <div id="screenshots-ctgis" class="screenshots"></div>
+                    <a class="disabled">&#60&#47&#62 Private Code</a>
+                </section>
+                <section id="planbelle-content" class="project-content">
+                    <h1>Planbelle Convênio</h1>
+                    <p>System for managing an agreement of beauty salons and other services. In addition to tracking sign-ups and reporting, the system integrates with a payments API (PagSeguro) so customers can pay their monthly payments.</p>
+                    <p>I worked on modeling and implementing system screens, database routines and integration with the payments API.</p>
+                    <div class="tools">
+                        <p>Technologies Used:</p>
+                        <p>C#, Javascript, JQuery, MySQL, HTML, CSS and Bootstrap</p>
+                    </div>
+                    <div id="screenshots-planbelle" class="screenshots"></div>
+                    <a class="disabled">&#60&#47&#62 Private Code</a>
+                </section>
+                <section id="felipeprodrigues-content" class="project-content">
+                    <h1>FelipePRodrigues</h1>
+                    <p>Personal site that uses the GitHub Pages platform, and shows a summary of some projects I did.</p>
+                    <div class="tools">
+                        <p>Technologies Used:</p>
+                        <p>Javascript, HTML and CSS</p>
+                    </div>
+                    <div id="screenshots-felipeprodrigues" class="screenshots"></div>
+                    <a class="enabled" onclick="window.open('https://github.com/FelipePRodrigues/felipeprodrigues.github.io')">&#60&#47&#62 View Code</a>
+                </section>
+                <section id="ferreirapet-content" class="project-content">
+                    <h1>Ferreira Pet</h1>
+                    <p>Site developed for a pet product dealer. Made in ASP.NET, the site has some contact and signup forms, as well as a dynamically generated catalog.</p>
+                    <p>It was completely developed by me, from design to publication.</p>
+                    <div class="tools">
+                        <p>Technologies Used:</p>
+                        <p>C#, Javascript, HTML and CSS</p>
+                    </div>
+                    <div id="screenshots-ferreirapet" class="screenshots"></div>
+                    <a class="disabled">&#60&#47&#62 Private Code</a>
+                </section>
+            </div>
         </div>
     </section>
     
     <footer id="social">
         <div id="linkedin" onclick="window.open('https://www.linkedin.com/in/felipeprodrigues')">
-            <div></div> 
+            <div></div>
             <p>Linkedin</p>
         </div>
         <div id="github" onclick="window.open('https://github.com/felipeprodrigues')">
-            <div></div> 
-            <p>Github</p> 
+            <div></div>
+            <p>Github</p>
         </div>
         <div id="twitter" onclick="window.open('https://twitter.com/FelipePRodr')">
-            <div></div> 
+            <div></div>
             <p>Twitter</p>
         </div>
         <div id="instagram" onclick="window.open('https://www.instagram.com/felipeprodr/')">
-            <div></div> 
+            <div></div>
             <p>Instagram</p>
         </div>
-    </footer>
-    
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text..</p>
-        </div>        
-    </div>
+    </footer>  
     
     <script type="text/javascript" src="../js/modal.js"></script> 
+    <script type="text/javascript" src="../js/screenshots.js"></script>
 </body>
 </html>
