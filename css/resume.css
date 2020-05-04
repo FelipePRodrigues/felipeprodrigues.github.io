@@ -1,21 +1,19 @@
 #resume {
-    background-color: rgb(200, 200, 200);
+    background-color: #EEE;
+    color: #333;
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
-    color: rgb(36, 36, 36);
 }
 
 #resume h1 {
     font-size: 70px;
-    margin-bottom: 0;
+    margin: 0;
     text-align: center;
+    padding: 20px 0 40px 0;
 }
 
 #resume div {
-    padding-right: 20vw;
-    padding-left: 20vw;
     text-align: justify;
 }
 
@@ -46,12 +44,6 @@
         width: 50vw;
         font-size: 25px;
     }
-
-    #resume div {
-        padding-right: 20vw;
-        padding-left: 20vw;
-    }
-}
 
 @media (max-width: 600px) {
     #resume h1 {

@@ -16,12 +16,15 @@
     margin: 0;
     color: white;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0 40px 0;
+
 }
 
 .project{
-    min-height: 150px;
+    min-height: 100px;
+    max-height: 350px;
     min-width: 200px;  
+    max-width: 450px;
 }
 
 .project div{
@@ -84,7 +87,7 @@
 @media (min-width: 1101px) 
 {
     .project{
-        flex: 0 0 25%;
+        flex: 0 0 50%;
     }
 }
 
@@ -92,7 +95,7 @@
 @media (max-width: 1100px) 
 {
     .project{
-        flex: 0 0 33%;
+        flex: 0 0 50%;
     }
 }
 
