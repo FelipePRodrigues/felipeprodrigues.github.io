@@ -35,50 +35,50 @@
 }
 
 #ctgis div{
-    background: url('../img/projects/ctgis.png') no-repeat;    
+    background: url('../img/projects/ctgis.webp') no-repeat;    
     background-position: center;   
     border-color: #e8b33c;
 }
 
 #ctgis div:hover{
-    background: url('../img/projects/vermais.png') no-repeat; 
+    background: url('../img/projects/vermais.webp') no-repeat; 
     background-position: center;   
     background-color: #e8b33c;
 }
 
 #planbelle div{
-    background: url('../img/projects/planbelle.png') no-repeat;    
+    background: url('../img/projects/planbelle.webp') no-repeat;    
     background-position: center;   
     border-color: #cc3399;
 }
 
 #planbelle div:hover{
-    background: url('../img/projects/vermais.png') no-repeat;    
+    background: url('../img/projects/vermais.webp') no-repeat;    
     background-position: center;   
     background-color: #cc3399;
 }
 
 #felipeprodrigues div{
-    background: url('../img/projects/felipeprodrigues.png') no-repeat;    
+    background: url('../img/projects/felipeprodrigues.webp') no-repeat;    
     background-position: center;
     border-color: #FFFFFF;      
 }
 
 #felipeprodrigues div:hover{
-    background: url('../img/projects/vermais.png') no-repeat;    
+    background: url('../img/projects/vermais.webp') no-repeat;    
     background-position: center;
     background-color: #242424;   
     border-color: #242424;      
 }
 
 #ferreirapet div{
-    background: url('../img/projects/ferreirapet.png') no-repeat;    
+    background: url('../img/projects/ferreirapet.webp') no-repeat;    
     background-position: center;   
     border-color: #d3d2ca;
 }
 
 #ferreirapet div:hover{
-    background: url('../img/projects/vermais.png') no-repeat;    
+    background: url('../img/projects/vermais.webp') no-repeat;    
     background-position: center;   
     background-color: #242424;
     border-color: #242424;
