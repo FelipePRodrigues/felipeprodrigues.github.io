@@ -1,6 +1,6 @@
 #overview {
     color: #333;
-    background-color: #EEE;    
+    background-color: #EEE;
 }
 
 .my-title {
@@ -10,7 +10,7 @@
     font-weight: 900;
 }
 
-.my-description { 
+.my-description {
     color: #777;
     letter-spacing: -0.1px;
     line-height: 30px;
@@ -39,6 +39,10 @@
     padding: 20px;
     text-align: center;
     max-width: 400px;
+}
+
+#buttons a.disabled {
+    cursor: not-allowed;
 }
 
 #buttons a:hover {
