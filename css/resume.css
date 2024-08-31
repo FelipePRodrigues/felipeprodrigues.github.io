@@ -1,6 +1,6 @@
 #resume {
-    background-color: #EEE;
-    color: #333;
+    background-color: rgb(48,48,48);;
+    color: #FFF;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -24,7 +24,7 @@
 #downloadResume {
     font-size: 30px;
     margin: 15px;
-    border: solid 4px rgb(36, 36, 36);
+    border: solid 4px #FFF;
     width: 30vw;
     /*box-shadow: 10px 10px rgb(28, 28, 28);*/
     margin: 20px 10px 50px 10px;
@@ -44,6 +44,7 @@
         width: 50vw;
         font-size: 25px;
     }
+}
 
 @media (max-width: 600px) {
     #resume h1 {
