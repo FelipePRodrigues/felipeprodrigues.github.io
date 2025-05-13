@@ -14,12 +14,12 @@ html{
 body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100vh;   
+    height: 100vh;
 }
 
 body:after{
     display:none;
-    content: url('../img/projects/vermais.png');
+    content: url('../images/projects/vermais.png');
 }
 
 #backtotop{
@@ -40,7 +40,7 @@ body:after{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
     margin: auto;
 }
 
