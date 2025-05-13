@@ -4,16 +4,16 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Felipe Rodrigues</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>       
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body onload="redirectLanguage();">
     <script>
         function redirectLanguage(){
             var language = window.navigator.userLanguage || window.navigator.language;
             if(language == "pt-BR")
-            window.location = "pt-br/index.html";
+            window.location = "src/lang/pt/index.html";
             else
-            window.location = "en-us/index.html";
+            window.location = "src/lang/en/index.html";
         }
     </script>
 </body>

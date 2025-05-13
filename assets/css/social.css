@@ -1,6 +1,6 @@
 #social{
     display: flex;
-    z-index: 1;    
+    z-index: 1;
     margin: 15px 0 15px 0;
 }
 
@@ -25,39 +25,39 @@
 }
 
 #linkedin div{
-    background: url('../img/logos.png') 0 0;
+    background: url('../images/logos.png') 0 0;
 }
 #github div{
-    background: url('../img/logos.png') -32px 0;
+    background: url('../images/logos.png') -32px 0;
 }
 #twitter div{
-    background: url('../img/logos.png') -64px -0;
+    background: url('../images/logos.png') -64px -0;
 }
 #stackoverflow div{
-    background: url('../img/logos.png') -96px 0;
+    background: url('../images/logos.png') -96px 0;
 }
 #instagram div{
-    background: url('../img/logos.png') -128px 0;
+    background: url('../images/logos.png') -128px 0;
 }
 
 #linkedin div:hover{
-    background: url('../img/logos.png') 0 -32px;
+    background: url('../images/logos.png') 0 -32px;
 }
 #github div:hover{
-    background: url('../img/logos.png') -32px -32px;
+    background: url('../images/logos.png') -32px -32px;
 }
 #twitter div:hover{
-    background: url('../img/logos.png') -64px -32px;
+    background: url('../images/logos.png') -64px -32px;
 }
 #stackoverflow div:hover{
-    background: url('../img/logos.png') -96px -32px;
+    background: url('../images/logos.png') -96px -32px;
 }
 #instagram div:hover{
-    background: url('../img/logos.png') -128px -32px;
+    background: url('../images/logos.png') -128px -32px;
 }
 
 
-@media (max-width: 900px){ 
+@media (max-width: 900px){
     #social div p{
         display: none;
     }
